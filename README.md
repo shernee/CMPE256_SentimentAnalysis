@@ -5,7 +5,7 @@ Dataset - https://nijianmo.github.io/amazon/index.html
 For this project we have used 'Cell Phone and Accessories', 'Patio Lawn and Garden', 'Arts Crafts and Sewing' and 'Grocery and Gourmet Foods' datasets
 
 
-#### Client-side application for SafeDose
+#### Client-side application for Sentiment Analysis
 It is a Dash application. Dash is a framework that is built on top of plotly.js, react.js, and flask in Python.
 
 To run this app: <br>
@@ -19,4 +19,4 @@ To run this app: <br>
 #### Shared drive link for datasets and pickle files
 https://drive.google.com/drive/u/0/folders/0ALpX1C2y3qFZUk9PVA
 
-Project Artifacts - Presentation, Demo video and Porject Report can be found in the Info folder.
+Project Artifacts - Presentation, Demo video and Project Report can be found in the Info folder.
