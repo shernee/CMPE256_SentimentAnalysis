@@ -13,8 +13,6 @@ from nltk.corpus import stopwords
 from nltk.stem import wordnet
 import contractions
 
-PICKLE_FILE_PATH = 'pickles/'
-
 new_punctuation_list = list(string.punctuation) + ['...']
 
 stopword_list = stopwords.words('english')
@@ -49,14 +47,14 @@ def lemmatize_input_review(review_text: str):
   return lemma_str
 
 def vectorize_input_lemma(lemma_string: str):
-  with open(PICKLE_FILE_PATH+'/tdidf.pkl', 'rb') as f:
+  with open('assets/tdidf.pkl', 'rb') as f:
     tv = pickle.load(f)
   input_vector = tv.transform(np.array([lemma_string]))
 
   return input_vector
 
 def classify_and_predict(input_vector):
-  with open(PICKLE_FILE_PATH+'/lr_unbalanced.pkl', 'rb') as f:
+  with open('assets/lr_unbalanced.pkl', 'rb') as f:
     lr_model_tdidf_unbalanced = pickle.load(f)
 
   predicted_value = lr_model_tdidf_unbalanced.predict(input_vector)

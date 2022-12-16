@@ -1,0 +1,16 @@
+contractions==0.1.73
+dash==2.6.2
+dash-bootstrap-components==1.2.1
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+Flask==2.2.2
+Flask-Compress==1.13
+imbalanced-learn==0.9.1
+matplotlib==3.5.3
+matplotlib-inline==0.1.6
+nltk==3.7
+numpy==1.23.2
+pandas==1.4.3
+scikit-learn==1.1.2
+scipy==1.9.1
