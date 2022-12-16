@@ -16,3 +16,17 @@
 .model-page {
     margin: 10px 20px 10px 20px;
 }
+
+.output-area {
+    height: 100px;
+}
+
+.positive-sentiment-label { 
+    padding: 10px;  
+    color: 'green'
+}
+
+.negative-sentiment-label {
+    padding: 10px;
+    color: 'red'
+}

@@ -14,7 +14,11 @@ layout = html.Div([
         style={'width': '100%', 'height': 300},
     ),
     dbc.Button("Generate review sentiment", id="generate_label"),
-    html.Div(id='classification-output')
+    html.Div(id='classification-output'),
+    html.Div(html.Img(
+    src='/assets/classification_report.png',
+    className='report-image'
+    ))
 ])
 
 @dash.callback(Output('classification-output', 'children'), 

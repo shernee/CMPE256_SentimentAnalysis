@@ -13,6 +13,8 @@ from nltk.corpus import stopwords
 from nltk.stem import wordnet
 import contractions
 
+PICKLE_FILE_PATH = 'pickles/'
+
 new_punctuation_list = list(string.punctuation) + ['...']
 
 stopword_list = stopwords.words('english')
@@ -25,7 +27,7 @@ stopwords4 = ['ma']
 new_stopwords_list = stopwords1 + stopwords2 + stopwords3 + stopwords4
 
 def lemmatize_input_review(review_text: str):
-  expanded_review_text = contractions.fix("This isn't the best material")
+  expanded_review_text = contractions.fix(review_text)
   all_tokens = wordpunct_tokenize(expanded_review_text)
   tokens = []
   stopword_count = 0
@@ -47,14 +49,14 @@ def lemmatize_input_review(review_text: str):
   return lemma_str
 
 def vectorize_input_lemma(lemma_string: str):
-  with open('/content/drive/MyDrive/Sentiment_data/tdidf.pkl', 'rb') as f:
+  with open(PICKLE_FILE_PATH+'/tdidf.pkl', 'rb') as f:
     tv = pickle.load(f)
   input_vector = tv.transform(np.array([lemma_string]))
 
   return input_vector
 
 def classify_and_predict(input_vector):
-  with open('/content/drive/MyDrive/Sentiment_data/lr_unbalanced.pkl', 'rb') as f:
+  with open(PICKLE_FILE_PATH+'/lr_unbalanced.pkl', 'rb') as f:
     lr_model_tdidf_unbalanced = pickle.load(f)
 
   predicted_value = lr_model_tdidf_unbalanced.predict(input_vector)
