@@ -20,7 +20,7 @@ To run this app: <br>
 https://drive.google.com/drive/u/0/folders/0ALpX1C2y3qFZUk9PVA
 
 Project Notebooks - Code (google colab) files 
-Project Data - Pickle files for models/vectorizers and Data files for the application ([Application_data]((https://drive.google.com/drive/u/0/folders/1PRx94Yd_cXOIVKuJN02b0pO_3ToEobV2))
+Project Data - Pickle files for models/vectorizers and Data files for the application ([Application_data](https://drive.google.com/drive/u/0/folders/1PRx94Yd_cXOIVKuJN02b0pO_3ToEobV2))
 Project Info - Demo presentation, Demo video and Project report
 
 The video for our demo can also be found on [YouTube](https://youtu.be/4_-cGphili4)
