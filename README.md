@@ -1,6 +1,6 @@
 ### CMPE256 Term Project - Sentiment Analysis
 
-Dataset - https://nijianmo.github.io/amazon/index.html
+Orginal Dataset - https://nijianmo.github.io/amazon/index.html
 
 For this project we have used 'Cell Phone and Accessories', 'Patio Lawn and Garden', 'Arts Crafts and Sewing' and 'Grocery and Gourmet Foods' datasets
 
@@ -19,4 +19,8 @@ To run this app: <br>
 #### Shared drive link for datasets and pickle files
 https://drive.google.com/drive/u/0/folders/0ALpX1C2y3qFZUk9PVA
 
-Project Artifacts - Presentation, Demo video and Project Report can be found in the Info folder.
+Project Notebooks - Code (google colab) files 
+Project Data - Pickle files for models/vectorizers and Data files for the application ([Application_data]((https://drive.google.com/drive/u/0/folders/1PRx94Yd_cXOIVKuJN02b0pO_3ToEobV2))
+Project Info - Demo presentation, Demo video and Project report
+
+The video for our demo can also be found on [YouTube](https://youtu.be/4_-cGphili4)
